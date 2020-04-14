@@ -27,9 +27,10 @@ export default class App extends Component {
     return (
       
       <div className="container">
+        <Country handleCountryChange={this.handleCountryChange}/>
         <Cards data={data}/>
         <Chart data={data} country={country} />
-        <Country handleCountryChange={this.handleCountryChange}/>
+
       </div>
     )
   }
