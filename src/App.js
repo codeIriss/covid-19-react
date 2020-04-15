@@ -3,6 +3,7 @@ import Cards from './Components/Cards/Cards';
 import Chart from './Components/Chart/Chart';
 import Country from './Components/Country/Country';
 import {fetchData} from './api/index';
+import image from './Components/images/image.png';
 import './App.css';
 
 export default class App extends Component {
@@ -27,6 +28,7 @@ export default class App extends Component {
     return (
       
       <div className="container">
+        <img className="image" src={image} alt="COVID-19" />
         <Country handleCountryChange={this.handleCountryChange}/>
         <Cards data={data}/>
         <Chart data={data} country={country} />

@@ -11,8 +11,9 @@ body {
 }
 
 .image {
-  width: 370px;
-  margin-top: 50px;
+  width: 500px;
+  /* margin-top: 10px; */
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 770px) {
